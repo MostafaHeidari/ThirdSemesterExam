@@ -2,7 +2,7 @@
   <mat-card class="example-card col">
 
     <mat-form-field class="col-6 col-sm-4 px-4">
-      <input matInput placeholder="Pets Name" [(ngModel)]="petName">
+      <input matInput placeholder="Pets Name" [(ngModel)]="petName"><!--ngModel using petName from pet.ts line 15-->
     </mat-form-field>
 
 
@@ -22,7 +22,7 @@
 
 
     <mat-form-field class="col-6 col-sm-4 px-4">
-      <input matInput placeholder="Image-URL" [(ngModel)]="image" required>
+      <input matInput placeholder="Image-URL" [(ngModel)]="image" required><!--required-->
     </mat-form-field>
 
     <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill">
@@ -43,7 +43,7 @@
 
     <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill">
       <mat-label>Enter your email</mat-label>
-      <input matInput placeholder="E-mail" [(ngModel)]="email" required>
+      <input matInput placeholder="E-mail" [(ngModel)]="email" required><!--required-->
     </mat-form-field>
 
     <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill">
@@ -53,14 +53,79 @@
 
 
     <div class="row d-flex justify-content-center">
+      <!--disabled until some parameter is filled-->
       <button class="AddPetsButton col-6 col-sm-6 my-4" [disabled]="petName=='' ||  petPrice<1 || dogBreeds =='' && address =='' || image== '' " mat-raised-button
               matTooltip="Save this information to the Card"
               (click)="http.addPets({Name: petName,price: petPrice, Description: petDescription, DogBreeds: dogBreeds,Address: address,Zipcode:zipcode, City: city, Email:email,Image:image
-})">Add Pet
+})">Add Pet <!--click function using http.service add method line 96-->
       </button>
     </div>
+  </mat-card>
+</div>
 
 
+<div class="container p-5">
+  <mat-card class="example-card col">
+
+    <mat-form-field class="col-6 col-sm-4 px-4">
+      <input matInput placeholder="Pets Name" [(ngModel)]="petUpdateName"><!--ngModel using petName from pet.ts line 15-->
+    </mat-form-field>
+
+
+    <mat-form-field class="col-6 col-sm-4 px-4">
+      <input matInput placeholder="Address" [(ngModel)]="Updateaddress">
+    </mat-form-field>
+
+
+    <mat-form-field class="col-6 col-sm-4 px-4">
+      <input matInput placeholder="City" [(ngModel)]="Updatecity">
+    </mat-form-field>
+
+
+    <mat-form-field class="col-6 col-sm-4 px-4">
+      <input matInput placeholder="Zipcode" [(ngModel)]="Updatezipcode">
+    </mat-form-field>
+
+
+    <mat-form-field class="col-6 col-sm-4 px-4">
+      <input matInput placeholder="Image-URL" [(ngModel)]="Updateimage" required><!--required-->
+    </mat-form-field>
+
+    <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill">
+      <mat-label>Dog Breeds</mat-label>
+      <mat-select [(ngModel)]="dogUpdateBreeds">
+        <mat-option value="Golden Retriever">Golden Retriever</mat-option>
+        <mat-option value="Labrador Retriever">Labrador Retriever</mat-option>
+        <mat-option value="Poodle">Poodle</mat-option>
+        <mat-option value="Bulldog">Bulldog</mat-option>
+        <mat-option value="French bulldog">French bulldog</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill" floatLabel="always">
+      <mat-label>Amount i KR</mat-label>
+      <input matInput type="number" [(ngModel)]="petUpdatePrice" class="example-right-align" placeholder="0">
+    </mat-form-field>
+
+    <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="E-mail" [(ngModel)]="Updateemail" required><!--required-->
+    </mat-form-field>
+
+    <mat-form-field class="col-6 col-sm-4 px-4" appearance="fill">
+      <mat-label>Description</mat-label>
+      <input type="Textarea" matInput [(ngModel)]="petUpdateDescription">
+    </mat-form-field>
+    <!--[disabled]="petName=='' ||  petPrice<1 || dogBreeds =='' && address =='' || image== '' "-->
+
+    <div class="row d-flex justify-content-center">
+      <!--disabled until some parameter is filled-->
+      <button class="AddPetsButton col-6 col-sm-6 my-4" [disabled]="petUpdateName=='' ||  petUpdatePrice<1 || dogUpdateBreeds =='' && Updateaddress =='' || Updateimage== '' " mat-raised-button
+              matTooltip="Save this information to the Card"
+              (click)="http.updatePets(petId,{Name: petUpdateName, price: petUpdatePrice, Description: petUpdateDescription, DogBreeds: dogUpdateBreeds, Address: Updateaddress,Zipcode:Updatezipcode, City: Updatecity, Email:Updateemail,Image:Updateimage
+})">Update <!--click funktion using http.service update method line 72 -->
+      </button>
+    </div>
   </mat-card>
 </div>
 
@@ -68,8 +133,8 @@
 <div class="container">
   <div class="row row-cols-1">
     <div class="row">
-      <mat-card id="addToCard" style="" *ngFor="let p of http.pets" (click)="(p)">
-        <mat-card-title style="display: inline;">{{p.name}}</mat-card-title>
+      <mat-card id="addToCard" style="" *ngFor="let p of http.pets" (click)="(p)"><!--loops trough p http service line 18-->
+        <mat-card-title style="display: inline;">{{p.name}}</mat-card-title><!--used from interface in http service line 109-->
         <div class="w-50"><img mat-card-image src="{{p.image}}" alt="Cool">
           <p id="infoTitle">Information</p>
           <mat-card-subtitle>Price: {{p.price}},-</mat-card-subtitle>
@@ -88,8 +153,17 @@
         <mat-card-actions class="DeletePetsButton">
           <button class="my-3" mat-raised-button color="warn" matTooltip="You will miss the information about this Pet."
                   (click)="http.deletePets(p.id)">Delete
+            <!--click function using http.service delete method line 66-->
           </button>
         </mat-card-actions>
+
+        <mat-card-actions class="UpdatePetsButton">
+          <button class="my-3" mat-raised-button color="warn" matTooltip="You will miss the information about this Pet."
+                  (click)="startUpdatePet(p)"
+>update Pet <!--click function using pets ts startUpdatePet method line 41-->
+          </button>
+        </mat-card-actions>
+
       </mat-card>
     </div>
   </div>

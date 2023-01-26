@@ -3,10 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="55bcf401-fe01-4dfe-8ea0-1eeafca4fba4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/db.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/db.db-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/about-os/about-os.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/about-os/about-os.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/about-os/about-os.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/about-os/about-os.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/API-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/API-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/Application-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/Application-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/Domain-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/Domain-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/Infrastructure-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PetsWebShop/xs/project-cache/Infrastructure-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/API/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/db.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/API/db.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/db.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/API/db.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/AuthenticationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/AuthenticationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Services/authguard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Services/authguard.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Services/http.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/about-os/about-os.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/about-os/about-os.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pets/pet.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pets/pet.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pets/pet.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pets/pet.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +48,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mathiasferniss/Desktop/ThirdSemesterExam/Frontend/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -46,6 +62,39 @@
       <option name="presentableId" value="Default" />
       <updated>1668604593041</updated>
       <workItem from="1668604598274" duration="69000" />
+      <workItem from="1673185218164" duration="322000" />
+      <workItem from="1673275909370" duration="354000" />
+      <workItem from="1673276291703" duration="47000" />
+      <workItem from="1673330559861" duration="849000" />
+      <workItem from="1673360805316" duration="475000" />
+      <workItem from="1673464677044" duration="273000" />
+      <workItem from="1673509939396" duration="455000" />
+      <workItem from="1673511082216" duration="725000" />
+      <workItem from="1673530302148" duration="1508000" />
+      <workItem from="1673597411532" duration="3241000" />
+      <workItem from="1673604103139" duration="2961000" />
+      <workItem from="1673611567833" duration="1706000" />
+      <workItem from="1673615346316" duration="5266000" />
+      <workItem from="1673626769887" duration="2522000" />
+      <workItem from="1673631870761" duration="566000" />
+      <workItem from="1673633676109" duration="226000" />
+      <workItem from="1673696694344" duration="116000" />
+      <workItem from="1673697722821" duration="1426000" />
+      <workItem from="1673699391677" duration="973000" />
+      <workItem from="1673732560585" duration="3641000" />
+      <workItem from="1673801744035" duration="2266000" />
+      <workItem from="1673805786374" duration="1507000" />
+      <workItem from="1673963861357" duration="3139000" />
+      <workItem from="1674377001875" duration="3317000" />
+      <workItem from="1674385152431" duration="2171000" />
+      <workItem from="1674478554079" duration="93000" />
+      <workItem from="1674479458635" duration="134000" />
+      <workItem from="1674479958465" duration="1374000" />
+      <workItem from="1674490671888" duration="283000" />
+      <workItem from="1674493795700" duration="1545000" />
+      <workItem from="1674567542817" duration="1773000" />
+      <workItem from="1674581686592" duration="1207000" />
+      <workItem from="1674639046961" duration="1331000" />
     </task>
     <servers />
   </component>

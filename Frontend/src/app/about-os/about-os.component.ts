@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+//Component for html og scss
 @Component({
   selector: 'app-about-os',
   templateUrl: './about-os.component.html',

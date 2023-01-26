@@ -3,7 +3,7 @@
   <div class="email">
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email</mat-label>
-      <input [(ngModel)]="email" matInput>
+      <input [(ngModel)]="email" matInput> <!--ngModel using email from login.ts line 12-->
     </mat-form-field>
   </div>
 
@@ -15,8 +15,11 @@
   </div>
 
   <div class="button">
+    <!--click function using http.service login method line 80-->
     <button mat-flat-button id="btnLogin" color="primary" (click)="http.login({email: email, password: password})">Login
     </button>
+
+    <!--click funktion using http.service register method line 102-->
     <button mat-flat-button id="btnRegister" color="primary"
             (click)="http.register({role: 'Admin', email: email, password: password})">Register
     </button>
