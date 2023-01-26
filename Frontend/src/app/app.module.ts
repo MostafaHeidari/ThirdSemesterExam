@@ -27,7 +27,7 @@ import {PetComponent} from "./pets/pet.component";
 
 const routes: Routes = [
   {
-    path: 'pets', component: PetComponent, canActivate: [AuthguardService], resolve: [MyResolver]
+    path: 'pets', component: PetComponent, canActivate: [AuthguardService], resolve: [MyResolver] //using resolve
   },
   {
     path: 'login', component: LoginComponent

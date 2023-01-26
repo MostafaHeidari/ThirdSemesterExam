@@ -47,13 +47,14 @@ public class AuthenticationService : IAuthenticationService
         throw new Exception("Email " + dto.Email + " is already taken");
     }
 
+    // Generating Token
     private string GenerateToken(User user)
     {
         var key =Encoding.UTF8.GetBytes(_appSettings.Secret);
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[] { new Claim("email", user.Email), new Claim("role", user.Role) }),
-            Expires = DateTime.UtcNow.AddDays(7),
+            Expires = DateTime.UtcNow.AddDays(7),//token expires after 7 days
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
         };
         var tokenHandler = new JwtSecurityTokenHandler();

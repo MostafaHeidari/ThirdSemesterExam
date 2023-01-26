@@ -18,7 +18,7 @@
 
   <a>
     <button mat-stroked-button slot="end" *ngIf="http.userName!=undefined && http.userName!=''">
-      <span (click)="logOut()">Sign {{http.userName}} out</span>
+      <span (click)="logOut()">Sign {{http.userName}} out</span> <!--Username is from http service line 19-->
     </button>
   </a>
 

@@ -25,6 +25,7 @@ export class AppComponent {
         this.currentRoute = event.url;
       }
     });
+    //Token creating in local storage
     let t = localStorage.getItem('token')
     if (t) {
       let decoded = jwtDecode(t) as any;
@@ -36,6 +37,7 @@ export class AppComponent {
     this.router.navigate(['./login'])
    }
 
+   //Logout function
   logOut() {
     this.router.navigate(['login']).then(() => {
       this.snackBar.open('You have now been logged out', undefined, {duration: 3000})

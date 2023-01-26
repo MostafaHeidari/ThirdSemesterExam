@@ -9,10 +9,12 @@ import {HttpService} from "../../services/http.service";
 })
 export class LoginComponent  {
 
-  email: any;
+  email: any; //email is used in login.html line 6
   password: any;
-  htmlSnippet: string =
-   "<script>alert(\"attempt to hack\")</script><b>other html tag</b>";
+
+
+//should not be here
+  htmlSnippet: string = "<script>alert(\"attempt to hack\")</script><b>other html tag</b>";
 
   constructor(public http: HttpService) { }
 }
